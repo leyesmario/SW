@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "apiC": {
+    "SW-master": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/apiC",
+            "outputPath": "dist/SW-master",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "apiC:build"
+            "browserTarget": "SW-master:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "apiC:build:production"
+              "browserTarget": "SW-master:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "apiC:build"
+            "browserTarget": "SW-master:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "apiC:serve"
+            "devServerTarget": "SW-master:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "apiC:serve:production"
+              "devServerTarget": "SW-master:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "apiC"
+  "defaultProject": "SW-master"
 }
